@@ -48,6 +48,7 @@ a {
 
 header {
   height: 200px;
+  margin-bottom: 50px;
 }
 
 header img {
@@ -62,6 +63,7 @@ header img {
 
 .search {
   height: 100px;
+  margin-bottom: 50px;
 }
 
 input[type='text'] {
