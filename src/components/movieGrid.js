@@ -4,7 +4,7 @@ import Spinner from './Spinner'
 
 const movieGrid = ({items, isLoading}) => {
     return isLoading ? (<Spinner />):(<section className="cards">
-        {items.map(item => (<MovieItem key={item.imdbID} item={item}></MovieItem>))}
+        {items.map(item => (<MovieItem key={item.imdb_id} item={item}></MovieItem>))}
     </section>)
 
     

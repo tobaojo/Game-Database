@@ -11,9 +11,9 @@ const App = () => {
   
   useEffect(() => {
     const fetchItems = async () => {
-      let result = await fetch(`http://www.omdbapi.com/?&apikey=5c677186&s=man`);
+      let result = await fetch(`https://movies-tvshows-data-imdb.p.rapidapi.com/`);
       const data =  await result.json();
-      let movies = data.Search;
+      let movies = data;
     //  movies.forEach((movie) => {
     //    output += movie.Title;
     //  });
@@ -21,20 +21,33 @@ const App = () => {
     //  movies.map((movie) => {
     //   console.log(movie);
     //  })
-    console.log(data.Search);
+  
     //   console.log(typeof output);
-
+      console.log(data)
       setItems(movies);
       setIsLoading(false)
     }
 
     fetchItems()
     
-  },[query])
+  },[])
 
-  const search = SearchValue =>{
+  // const search = searchValue => {
+  //   setLoading(true);
+  //   setErrorMessage(null);
 
-  }
+  //   fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=5c677186`)
+  //     .then(response => response.json())
+  //     .then(jsonResponse => {
+  //       if (jsonResponse.Response === "True") {
+  //         setMovies(jsonResponse.Search);
+  //         setLoading(false);
+  //       } else {
+  //         setErrorMessage(jsonResponse.Error);
+  //         setLoading(false);
+  //       }
+  //     });
+  // 	};
 
   return (
     <div className="container">
