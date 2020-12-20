@@ -13,7 +13,7 @@ const onChange = (q) => {
             <form action="">
                 <input type="text"
                 className="form-control"
-                placeholder="Search Movie"
+                placeholder="Search Game"
                 autoFocus
                 value={text}
                 onChange={(e)=> onChange(e.target.value)}

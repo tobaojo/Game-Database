@@ -5,16 +5,19 @@ const movieItem = ({ item }) => {
         <div className='card'>
         <div className='card-inner'>
           <div className='card-front'>
-            <img src={item.Poster} alt='' />
+            <img src={item.thumbnail} alt='' />
           </div>
           <div className='card-back'>
             <h1>{item.Title}</h1>
             <ul>
               <li>
-                <strong>Year:</strong> {item.Year}
+                <strong>Name</strong> {item.title}
               </li>
               <li>
-                <strong>Type:</strong> {item.Type}
+                <strong>Platform:</strong> {item.platform}
+              </li>
+              <li>
+                <strong>Genre:</strong> {item.genre}
               </li>
               {/* <li>
                 <strong>Birthday:</strong> {item.birthday}

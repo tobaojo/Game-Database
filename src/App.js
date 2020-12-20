@@ -11,20 +11,12 @@ const App = () => {
   
   useEffect(() => {
     const fetchItems = async () => {
-      let result = await fetch(`https://movies-tvshows-data-imdb.p.rapidapi.com/`);
+      let result = await fetch(`https://cors-anywhere.herokuapp.com/https://www.freetogame.com/api/games`);
       const data =  await result.json();
-      let movies = data;
-    //  movies.forEach((movie) => {
-    //    output += movie.Title;
-    //  });
-
-    //  movies.map((movie) => {
-    //   console.log(movie);
-    //  })
-  
-    //   console.log(typeof output);
+      let games = data;
+   
       console.log(data)
-      setItems(movies);
+      setItems(games);
       setIsLoading(false)
     }
 
@@ -32,22 +24,6 @@ const App = () => {
     
   },[])
 
-  // const search = searchValue => {
-  //   setLoading(true);
-  //   setErrorMessage(null);
-
-  //   fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=5c677186`)
-  //     .then(response => response.json())
-  //     .then(jsonResponse => {
-  //       if (jsonResponse.Response === "True") {
-  //         setMovies(jsonResponse.Search);
-  //         setLoading(false);
-  //       } else {
-  //         setErrorMessage(jsonResponse.Error);
-  //         setLoading(false);
-  //       }
-  //     });
-  // 	};
 
   return (
     <div className="container">
