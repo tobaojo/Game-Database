@@ -39,4 +39,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-# Movie-Database
+# Game-Database
+This is an application created with React and Fetch API which gets all the information from a free to play game API and display them in a greid fashion and each card can be flipped to reveal more information of each of the games. 
+
+I created this as an idea of the sort of free games out there that i would like to play and also to give myself an excersise on the ins and outs of react.
